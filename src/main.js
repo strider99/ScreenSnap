@@ -6,11 +6,13 @@ let mainWindow;
 
 function startApp(){
   mainWindow = new BrowserWindow({
-    width: 900,
-    height: 900
+    frame: false,
+    width: 0,
+    height: 0,
+    resizable: false
   });
+
   mainWindow.loadURL(`file://${__dirname}/capture.html`);
-  mainWindow.openDevTools();
 
   const tray = new Tray(path.join(__dirname, 'icon.png'));
   const template = [
