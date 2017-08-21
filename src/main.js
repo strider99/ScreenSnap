@@ -6,10 +6,10 @@ let mainWindow;
 
 function startApp(){
   mainWindow = new BrowserWindow({
-    frame: false,
     width: 0,
     height: 0,
-    resizable: false
+    resizable: false,
+    frame: false
   });
 
   mainWindow.loadURL(`file://${__dirname}/capture.html`);
@@ -31,7 +31,7 @@ function startApp(){
     mainWindow.webContents.send('capture', app.getPath('pictures'));
 
   })
-  mainWindow.on('closed', closeApp);
+  mainWindow.on('close', closeApp);
 
 }
 
