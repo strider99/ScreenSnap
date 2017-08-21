@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron-prebuilt": "^1.4.13"
+    "electron-packager": "^8.7.2",
+    "electron-prebuilt": "^1.4.13",
+    "rimraf": "^2.6.1"
   }
 }
