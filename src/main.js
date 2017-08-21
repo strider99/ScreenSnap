@@ -9,7 +9,8 @@ function startApp(){
     width: 0,
     height: 0,
     resizable: false,
-    frame: false
+    frame: false,
+    transparent: false
   });
 
   mainWindow.loadURL(`file://${__dirname}/capture.html`);
