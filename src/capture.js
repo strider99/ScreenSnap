@@ -23,7 +23,7 @@ function onCapture(evt, targetPath) {
   getMainSource(desktopCapturer, screen, source => {
     console.log(source);
     const png = source.thumbnail.toPng();
-    const filePath = path.join(targetPath, new Date() + '.png');
+    const filePath = path.join(targetPath, new Date().getTime() + '.png');
     writeScreenshot(png, filePath);
   })
 }
