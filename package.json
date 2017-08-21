@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
+    "build": "rimraf ScreenSnap-* && electron-packager . --platform=darwin,win32,linux --arch=x64 --icon=app",
     "start": "electron ."
   },
   "keywords": [],

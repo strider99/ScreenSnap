@@ -10,7 +10,7 @@ function startApp(){
     height: 0,
     resizable: false,
     frame: false,
-    transparent: false
+    transparent: true
   });
 
   mainWindow.loadURL(`file://${__dirname}/capture.html`);
